@@ -1,0 +1,28 @@
+
+
+body {
+  height: 600px;
+  background-image: url(https://wallpaperplay.com/walls/full/7/a/e/64796.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgb(255, 255, 255, .8);
+  padding: 30px 100px;
+
+  animation: anime1 2s ease;
+}
+
+@keyframes anime1 {
+  0% {
+      opacity:  0;                /* 透明度指定 */
+      top: 50px;                  /* 位置指定 */
+  }
+  100% {
+      opacity:  1;                /* 透明度指定 */
+      top: 0;                     /* 位置指定 */
+  }
+}

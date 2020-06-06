@@ -1,0 +1,52 @@
+
+
+body {
+  height: 2000px;
+  background-image: url(https://i.pinimg.com/originals/43/07/0c/43070c514afe3ed4b018ec26218090e3.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 70%;
+  padding: 30px 150px;
+  background-color: rgb(255, 255, 255, .85);
+
+  animation: anime1 2s ease;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.finish {
+  width: 15%;
+  height: 8vh;
+}
+
+@keyframes anime1 {
+  0% {
+      opacity:  0;                /* 透明度指定 */
+      top: 50px;                  /* 位置指定 */
+  }
+  100% {
+      opacity:  1;                /* 透明度指定 */
+      top: 0;                     /* 位置指定 */
+  }
+}

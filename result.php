@@ -4,14 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./style_result.css">
+  
 </head>
 <body>
-
-  <style>
-    body {
-      background-color: #ffc9d2;
-    }
-  </style>
 
 <?php
 
@@ -33,20 +29,30 @@ $total = $q1 + $q2 + $q3 + $q4 + $q5 + $q6 + $q7 + $q8;
 // echo $total;
 
 if (8 <= $total && $total <= 12) {
-  echo "『グリフィンドール』";
+  $result = "『グリフィンドール』<br><br>あなたは「勇気と騎士道精神」
+  <br>「決断力のある」性格。 <br>一度決めたらまっすぐに突き進む人、<br>意思が強い人たちです。";
 } else if (13 <= $total && $total <= 16) {
-  echo "『ハッフルパフ』";
+  $result = "『ハッフルパフ』<br><br>あなたは「正しく忠実で忍耐強く」
+  <br>「勤勉で苦労を苦労と思わない」性格。 <br>正直に生きていて、嫌味なところがありません。<br>信頼できる人たちです。";
 } else if (17 <= $total && $total <= 20) {
-  echo "『レイブンクロー』";
+  $result = "『レイブンクロー』<br><br>あなたは「勤勉で賢く」
+  <br>「知性を何よりも重んじる」性格。 <br>賢いけれどもちょっとズレていて、<br>個性的な人たちです。";
 } else if (21 <= $total && $total <= 24) {
-  echo "『スリザリン』";
+  $result = "『スリザリン』<br><br>あなたは「野心的で鋭敏」
+  <br>「リーダー的で成果主義のある」性格。 <br>一つのことに熱中できて尚かつ<br>目標が達成できる人たちです。 ";
 }
 ?>
+<div class="container">
+  <h1>診断結果...</h1>
+  <br>
+  <h3><?= $result ?></h3>
+  <br>
 
-
-<form action="index.html" method="POST">
-  <button type="button" onclick="history.back()" >戻る</button>
-</form>
+  
+  <form action="index.html" method="POST">
+    <button type="button" onclick="history.back()" >戻る</button>
+  </form>
+</div>
   
 </body>
 </html>
