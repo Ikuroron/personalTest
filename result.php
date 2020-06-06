@@ -11,9 +11,6 @@
 
 <?php
 
-// require_once('functions.php');
-
-// var_dump($_POST);
 
 $q1 = $_POST["q1"];
 $q2 = $_POST["q2"];
@@ -25,8 +22,6 @@ $q7 = $_POST["q7"];
 $q8 = $_POST["q8"];
 
 $total = $q1 + $q2 + $q3 + $q4 + $q5 + $q6 + $q7 + $q8;
-
-// echo $total;
 
 if (8 <= $total && $total <= 12) {
   $result = "『グリフィンドール』<br><br>あなたは「勇気と騎士道精神」
